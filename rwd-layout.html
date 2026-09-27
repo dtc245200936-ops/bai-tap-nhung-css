@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <!-- Thẻ meta viewport cực kỳ quan trọng cho Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục Trang Web Responsive (RWD)</title>
+    <link rel="stylesheet" href="rwd-style.css">
+</head>
+<body>
+
+    <!-- 1. Header -->
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+
+    <!-- 2. Navigation Bar -->
+    <nav class="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </nav>
+
+    <!-- 3. Layout Bố Cục Chính (3 Cột) -->
+    <div class="layout-container">
+        
+        <!-- Cột trái: Menu phụ -->
+        <aside class="col col-left">
+            <h3>Left Sidebar</h3>
+            <ul>
+                <li><a href="#">Danh mục 1</a></li>
+                <li><a href="#">Danh mục 2</a></li>
+                <li><a href="#">Danh mục 3</a></li>
+            </ul>
+        </aside>
+
+        <!-- Cột giữa: Nội dung chính -->
+        <main class="col col-center">
+            <h2>Nội Dung Chính</h2>
+            <p>Trang web này được thiết kế theo nguyên tắc Responsive Web Design (RWD). Khi bạn thay đổi kích thước trình duyệt hoặc xem trên điện thoại, các cột sẽ tự động sắp xếp lại cho phù hợp.</p>
+        </main>
+
+        <!-- Cột phải: Quảng cáo/Thông tin thêm -->
+        <aside class="col col-right">
+            <h3>Right Sidebar</h3>
+            <p>Nội dung quảng cáo hoặc liên kết bổ sung.</p>
+        </aside>
+
+    </div>
+
+    <!-- 4. Footer -->
+    <footer class="footer">
+        <p>Footer - Bản quyền &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

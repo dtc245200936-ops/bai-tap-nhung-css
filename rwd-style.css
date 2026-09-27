@@ -1,0 +1,98 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Container dùng Flexbox phân chia 3 cột */
+.layout-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 400px;
+}
+
+/* Cấu trúc các cột trên Máy tính (Desktop - màn hình rộng) */
+.col {
+    padding: 20px;
+}
+
+.col-left {
+    flex: 20%;
+    background-color: #f1f1f1;
+}
+
+.col-center {
+    flex: 60%;
+    background-color: #ffffff;
+}
+
+.col-right {
+    flex: 20%;
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+.footer {
+    background-color: #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+/* ========================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ======================================================== */
+
+/* 1. Màn hình Máy tính bảng (Tablet - Dưới 800px): Thu về 2 cột */
+@media screen and (max-width: 800px) {
+    .col-left, .col-center {
+        flex: 50%;
+    }
+    .col-right {
+        flex: 100%; /* Cột phải sẽ xuống hàng nằm ngang dưới cùng */
+    }
+}
+
+/* 2. Màn hình Điện thoại (Mobile - Dưới 600px): Thu về 1 cột duy nhất */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Menu dọc */
+    }
+    .col-left, .col-center, .col-right {
+        flex: 100%; /* Tất cả cột xếp chồng lên nhau */
+    }
+}

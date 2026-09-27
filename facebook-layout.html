@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Layout Giản Lược</title>
+    <link rel="stylesheet" href="facebook-style.css">
+</head>
+<body>
+
+    <!-- 1. Fixed Header -->
+    <header class="header">
+        <div class="header-left">
+            <h1 class="logo">facebook</h1>
+            <input type="text" placeholder="Tìm kiếm trên Facebook" class="search-bar">
+        </div>
+        <div class="header-center">
+            <a href="#" class="active">Trang chủ</a>
+            <a href="#">Bạn bè</a>
+            <a href="#">Video</a>
+            <a href="#">Nhóm</a>
+        </div>
+        <div class="header-right">
+            <div class="user-profile">
+                <span class="avatar"></span>
+                <span>Tài khoản</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container bao gồm Sidebar Trái, Nội dung chính, Sidebar Phải -->
+    <div class="main-container">
+        
+        <!-- 2. Sidebar Trái -->
+        <aside class="sidebar sidebar-left">
+            <ul>
+                <li class="active"><span class="icon">👤</span> Bạn Bè</li>
+                <li><span class="icon">👥</span> Nhóm</li>
+                <li><span class="icon">🏪</span> Marketplace</li>
+                <li><span class="icon">📺</span> Watch</li>
+                <li><span class="icon">🕒</span> Kỷ niệm</li>
+                <li><span class="icon">🔖</span> Đã lưu</li>
+            </ul>
+        </aside>
+
+        <!-- 3. Nội dung chính (Feed) -->
+        <main class="feed">
+            <!-- Box Tạo bài viết -->
+            <div class="create-post">
+                <div class="post-top">
+                    <span class="avatar"></span>
+                    <input type="text" placeholder="Bạn đang nghĩ gì thế?">
+                </div>
+            </div>
+
+            <!-- Bài viết 1 -->
+            <div class="post">
+                <div class="post-header">
+                    <span class="avatar"></span>
+                    <div>
+                        <h4>Nguyễn Văn A</h4>
+                        <span class="time">2 giờ trước</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Hôm nay bắt đầu thực hành làm giao diện Facebook bằng HTML5 và CSS đơn giản!</p>
+                </div>
+                <div class="post-actions">
+                    <button>Thích</button>
+                    <button>Bình luận</button>
+                    <button>Chia sẻ</button>
+                </div>
+            </div>
+
+            <!-- Bài viết 2 -->
+            <div class="post">
+                <div class="post-header">
+                    <span class="avatar"></span>
+                    <div>
+                        <h4>CodeGym Vietnam</h4>
+                        <span class="time">5 giờ trước</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Hoàn thành bài tập thiết kế Fixed Header và Sidebar cực kỳ dễ dàng với CSS Flexbox.</p>
+                </div>
+                <div class="post-actions">
+                    <button>Thích</button>
+                    <button>Bình luận</button>
+                    <button>Chia sẻ</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- 4. Sidebar Phải -->
+        <aside class="sidebar sidebar-right">
+            <h3>Người liên hệ</h3>
+            <ul>
+                <li><span class="avatar-online"></span> Nguyễn Văn B</li>
+                <li><span class="avatar-online"></span> Trần Thị C</li>
+                <li><span class="avatar-online"></span> Lê Văn D</li>
+                <li><span class="avatar-online"></span> Phạm Minh E</li>
+            </ul>
+        </aside>
+
+    </div>
+
+</body>
+</html>

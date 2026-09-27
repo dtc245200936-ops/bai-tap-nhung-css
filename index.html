@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Xem Phim Hoạt Hình Cho Bé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER (Cố định - Fixed Navigation) -->
+    <header class="header">
+        <div class="logo">
+            <span>🎬 Hoạt Hình Cho Bé</span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm phim hoạt hình...">
+            <button>Tìm kiếm</button>
+        </div>
+    </header>
+
+    <!-- 2. HEAD-LINK (Thanh liên kết trang) -->
+    <nav class="head-link">
+        <a href="#" class="active">Trang chủ</a>
+        <a href="#">Mới cập nhật</a>
+        <a href="#">Xem nhiều nhất</a>
+        <a href="#">Hoạt hình Thuyết minh</a>
+        <a href="#">Phim Cổ tích</a>
+    </nav>
+
+    <!-- 3. MAIN CONTENT (Bố cục Left-Content & Right-Content) -->
+    <div class="main-container">
+        
+        <!-- LEFT CONTENT: Menu danh sách phim -->
+        <aside class="left-content">
+            <h3>📺 Danh sách Video</h3>
+            <ul class="video-list">
+                <li>
+                    <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="video-player" class="active-video">
+                        1. Đoraemon Thuyết Minh (Full HD)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/embed/tgbNymZ7vqY" target="video-player">
+                        2. Tom & Jerry Tập Đặc Biệt
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/embed/L_LUpnjgPso" target="video-player">
+                        3. Quà Tặng Cuộc Sống - Bài Học Hay
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/embed/3JZ_D3ELwOQ" target="video-player">
+                        4. Phim Hoạt Hình Cổ Tích Việt Nam
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- RIGHT CONTENT: Trình chiếu Video chính -->
+        <main class="right-content">
+            <h2>Đang chiếu: Video Hoạt Hình Chọn Lọc</h2>
+            
+            <!-- Nhúng Youtube Video bằng iframe (Mặc định hiển thị video đầu tiên) -->
+            <div class="video-wrapper">
+                <iframe 
+                    name="video-player" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Mẫu nhúng bằng thẻ <video> trực tiếp từ máy/server local -->
+            <!--
+            <div class="video-wrapper">
+                <video controls width="100%">
+                    <source src="phim-hoat-hinh.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+            -->
+            
+            <div class="video-info">
+                <p><strong>Chất lượng:</strong> FullHD 1080p | <strong>Ngôn ngữ:</strong> Thuyết minh Tiếng Việt</p>
+                <p>Trang web tập hợp chọn lọc các nội dung an toàn, giáo dục và không chứa quảng cáo cho trẻ em.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- 4. FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Website Xem Hoạt Hình Trực Tuyến Dành Cho Trẻ Em. Bản quyền thuộc về Bạn.</p>
+    </footer>
+
+</body>
+</html>

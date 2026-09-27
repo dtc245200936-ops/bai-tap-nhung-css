@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đọc Truyện Ngắn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Bước 4: Định dạng ảnh đầu trang */
+        .story-banner {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+
+        /* Bước 1: Khung mục lục */
+        .toc {
+            background-color: #eef2f5;
+            padding: 15px 20px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .toc h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        /* Bước 3: Liên kết mục lục */
+        .toc a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+            color: #1d6fa5;
+        }
+
+        /* Nội dung truyện */
+        .chapter {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Bước 5: Thẻ h5 cho tiêu đề từng mục lục truyện */
+        h5 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #7f8c8d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bước 4: Ảnh truyện đặt ở đầu trang -->
+        <img class="story-banner" src="https://picsum.photos/800/350" alt="Ảnh minh họa truyện">
+
+        <h1>Tuyển Tập Truyện Ngắn Hạt Giống Tâm Hồn</h1>
+
+        <!-- Bước 1 & Bước 3: Mục lục truyện có liên kết chuyển đoạn -->
+        <div class="toc" id="muc-luc">
+            <h4>MỤC LỤC TRUYỆN</h4>
+            <ul>
+                <li><a href="#chuong-1">Chương 1: Cậu bé và cây đinh</a></li>
+                <li><a href="#chuong-2">Chương 2: Dấu chấm đen</a></li>
+                <li><a href="#chuong-3">Chương 3: Bàn tay của mẹ</a></li>
+            </ul>
+        </div>
+
+        <!-- Bước 2 & Bước 5: Nội dung truyện ứng với từng mục lục sử dụng thẻ h5 -->
+        <div class="chapter" id="chuong-1">
+            <h5>Chương 1: Cậu bé và cây đinh</h5>
+            <p>
+                Một cậu bé có tính xấu là rất hay nổi nóng. Một ngày nọ, cha cậu cho cậu một túi đinh và bảo: "Mỗi khi con nổi giận với ai đó, hãy đóng một cây đinh lên hàng rào gỗ sau nhà."
+            </p>
+            <p>
+                Ngày đầu tiên, cậu bé đã đóng 37 cây đinh. Nhưng qua vài tuần, cậu học cách kiềm chế sự tức giận và số đinh đóng mỗi ngày giảm dần. Cuối cùng, cậu bé nhận ra kiềm chế cơn giận còn dễ hơn là đóng những cây đinh đó.
+            </p>
+            <a href="#muc-luc" class="back-to-top">↑ Về mục lục</a>
+        </div>
+
+        <div class="chapter" id="chuong-2">
+            <h5>Chương 2: Dấu chấm đen</h5>
+            <p>
+                Một ngày nọ, vị giáo sư bước vào lớp và phát cho mỗi sinh viên một tờ giấy trắng có một dấu chấm đen ở giữa. Ông bảo cả lớp: "Hãy viết những gì các em nhìn thấy."
+            </p>
+            <p>
+                Tất cả sinh viên đều tập trung miêu tả về dấu chấm đen. Giáo sư mỉm cười nói: "Không ai viết về khoảng trắng rộng lớn xung quanh. Cuộc sống cũng vậy, chúng ta thường quá chú ý đến những vết đen nhỏ mà quên đi những điều tốt đẹp xung quanh."
+            </p>
+            <a href="#muc-luc" class="back-to-top">↑ Về mục lục</a>
+        </div>
+
+        <div class="chapter" id="chuong-3">
+            <h5>Chương 3: Bàn tay của mẹ</h5>
+            <p>
+                Một chàng trai trẻ đến xin việc vào vị trí quản lý. Vị giám đốc hỏi cậu đã bao giờ giúp mẹ rửa tay hay giặt quần áo chưa. Chàng trai đáp cậu chưa từng vì mẹ luôn làm hết để cậu tập trung học hành.
+            </p>
+            <p>
+                Giám đốc bảo cậu về nhà rửa tay cho mẹ rồi quay lại. Khi nâng bàn tay nhăn nheo, đầy sẹo của mẹ lên wash, cậu mới bật khóc nhận ra những vết sẹo ấy chính là giá phải trả cho sự thành công của cậu hôm nay.
+            </p>
+            <a href="#muc-luc" class="back-to-top">↑ Về mục lục</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Reset căn lề cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Nav */
+nav {
+    background-color: #e8491d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #35424a;
+}
+
+/* Container dùng Flexbox phân chia Main Content & Sidebar */
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* Main Content (Section & Article) */
+.main-content {
+    flex: 3;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    color: #35424a;
+    margin-bottom: 10px;
+}
+
+/* Sidebar (Aside) */
+.sidebar {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.sidebar h3 {
+    color: #e8491d;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
